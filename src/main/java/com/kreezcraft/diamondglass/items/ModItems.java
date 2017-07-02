@@ -1,25 +1,15 @@
 package com.kreezcraft.diamondglass.items;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
-
-	public static ItemBase thingDiamonium;
 	
-	public static void init() {
-		thingDiamonium = register(new ItemBase("thing_diamonium").setCreativeTab(CreativeTabs.MATERIALS));
-	}
+	public static final List<Item> ITEMS = new ArrayList<Item>();
 
-	private static <T extends Item> T register(T item) {
-		GameRegistry.register(item);
-
-		if (item instanceof ItemBase) {
-			((ItemBase)item).registerItemModel();
-		}
-
-		return item;
-	}
+	public static final Item DIAMONIUM = new ItemBase("diamonium").setCreativeTab(CreativeTabs.MATERIALS);
 
 }

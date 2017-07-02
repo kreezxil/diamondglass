@@ -7,7 +7,6 @@ public class BlockStandard extends BlockBase {
 
 	public BlockStandard(String name) {
 		super(Material.ROCK, name);
-
 		setHardness(3f);
 		setResistance(5f);
 	}
