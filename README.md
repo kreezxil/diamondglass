@@ -5,9 +5,9 @@ You craft 8 sand with 1 diamond to get diamond sand, a seamless block with the a
 
 Recipes
 
-http://i.imgur.com/aYX3sWd.png
+![Making Diamond Sand](http://i.imgur.com/aYX3sWd.png)
 
-http://i.imgur.com/UzC5IUp.png
+![Making Diamond Glass](http://i.imgur.com/UzC5IUp.png)
  
 Use it however you like. 
 
