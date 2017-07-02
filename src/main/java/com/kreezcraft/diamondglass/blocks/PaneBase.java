@@ -4,17 +4,17 @@ import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
 import com.kreezcraft.diamondglass.items.ModItems;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockPane;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockBase extends Block implements IHasModel{
+public class PaneBase extends BlockPane implements IHasModel {
 
 	protected String name;
 
-	public BlockBase(Material material, String name) {
-		super(material);
+	protected PaneBase(Material material, String name) {
+		super(material, true);
 		this.name = name;
 		setUnlocalizedName(DiamondGlass.MODID + "." + name);
 		setRegistryName(name);
