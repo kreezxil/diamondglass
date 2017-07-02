@@ -1,0 +1,16 @@
+[
+{
+  "modId": "diamondglass",
+  "name": "Diamond Glass",
+  "description": "Glass made with Diamond with the attributes of Obsidian",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://minecraft.curseforge.com/projects/diamond-glass",
+  "updateUrl": "",
+  "authorList": ["Kreezxil"],
+  "credits": "My brain, god, and my mom",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
