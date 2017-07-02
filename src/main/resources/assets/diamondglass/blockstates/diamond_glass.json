@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+		"model": "cube_all",
+        "textures": {
+            "all": "diamondglass:blocks/diamond_glass"
+        }
+    },
+    "variants": {
+        "normal": [{}],
+        "inventory": [{}]
+    }
+}
