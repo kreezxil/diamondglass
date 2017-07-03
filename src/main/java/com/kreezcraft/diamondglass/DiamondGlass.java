@@ -26,15 +26,14 @@ public class DiamondGlass {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		ModRecipes.init();
-		
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 
 	}
-	
-	@SidedProxy(serverSide = "com.kreezcraft.diamondglass.proxy.CommonProxy",clientSide="com.kreezcraft.diamondglass.proxy.ClientProxy")
+
+	@SidedProxy(serverSide = "com.kreezcraft.diamondglass.proxy.CommonProxy", clientSide = "com.kreezcraft.diamondglass.proxy.ClientProxy")
 	public static CommonProxy proxy;
 
 }

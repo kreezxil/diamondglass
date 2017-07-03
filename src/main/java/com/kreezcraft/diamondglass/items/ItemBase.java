@@ -6,8 +6,7 @@ import com.kreezcraft.diamondglass.client.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-
-public class ItemBase extends Item implements IHasModel{
+public class ItemBase extends Item implements IHasModel {
 
 	protected String name;
 

@@ -1,5 +1,6 @@
 {
     "multipart": [
+
         {   "apply": { "model": "block/diamondglass_pane_post" }},
         {   "when": { "north": true },
             "apply": { "model": "block/diamondglass_pane_side" }
