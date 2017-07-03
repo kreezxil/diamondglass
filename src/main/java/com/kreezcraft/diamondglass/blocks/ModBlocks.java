@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockPane;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class ModBlocks {
@@ -12,6 +13,6 @@ public class ModBlocks {
 
 	public static final Block DIAMOND_GLASS = new BlockGlass("diamond_glass").setCreativeTab(CreativeTabs.MATERIALS);
 	public static final Block DIAMOND_SAND = new BlockStandard("diamond_sand").setCreativeTab(CreativeTabs.MATERIALS);
-	
+	public static final Block DIAMOND_GLASS_PANE = new PaneGlass("diamond_glass_pane").setCreativeTab(CreativeTabs.MATERIALS);
 
 }
