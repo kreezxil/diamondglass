@@ -1,3 +1,5 @@
-tile.blockdiamondglass.name=Diamond Glass
-tile.blockdiamondsand.name=Diamond Sand
-item.thing_diamonium.name=A thing called Diamonium
+tile.diamondglass.diamond_glass.name=Diamond Glass
+tile.diamondglass.diamond_sand.name=Diamond Sand
+tile.diamondglass.diamond_glass_pane.name=Diamond Glass Pane
+
+item.diamondglass.diamonium.name=A placeholder thing called Diamonium

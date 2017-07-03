@@ -1,6 +1,7 @@
 package com.kreezcraft.diamondglass;
 
 import com.kreezcraft.diamondglass.proxy.CommonProxy;
+import com.kreezcraft.diamondglass.recipes.ModRecipes;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -24,6 +25,7 @@ public class DiamondGlass {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+		ModRecipes.init();
 		
 	}
 

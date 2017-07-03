@@ -1,5 +1,5 @@
 {
-    "parent": "block/diamdondglass_pane_noside",
+    "parent": "block/diamondglass_pane_noside",
     "textures": {
         "pane": "blocks/diamond_glass"
     }
