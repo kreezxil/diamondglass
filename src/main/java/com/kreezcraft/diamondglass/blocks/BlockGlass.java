@@ -26,14 +26,8 @@ public class BlockGlass extends BlockBase {
 	}
 
 	@Override
-	public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos,
-			EnumFacing side) {
-		final BlockPos otherPos = pos.offset(side);
-		IBlockState otherBlockState = blockAccess.getBlockState(otherPos);
-		if (otherBlockState.getBlock() instanceof BlockGlass) {
-			return false;
-		}
-		return super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+	public boolean shouldSideBeRendered(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
+		return !(world.getBlockState(pos.offset(side)).getBlock() == this);
 	}
 
 }
