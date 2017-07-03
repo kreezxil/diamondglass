@@ -34,8 +34,7 @@ public class PaneBase extends BlockPane implements IHasModel {
 	@Override
 	public boolean shouldSideBeRendered(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
 		IBlockState state2 = world.getBlockState(pos.offset(side));
-		return state2.getBlock() == this
-				? !(this.getActualState(state2, world, pos) == this.getActualState(state, world, pos)) : true;
+		return state2.getBlock() == this ? !(this.getActualState(state2, world, pos) == this.getActualState(state, world, pos)) : true;
 	}
 
 }

@@ -12,7 +12,6 @@ public class ModBlocks {
 
 	public static final Block DIAMOND_GLASS = new BlockGlass("diamond_glass").setCreativeTab(CreativeTabs.MATERIALS);
 	public static final Block DIAMOND_SAND = new BlockStandard("diamond_sand").setCreativeTab(CreativeTabs.MATERIALS);
-	public static final Block DIAMOND_GLASS_PANE = new PaneGlass("diamond_glass_pane")
-			.setCreativeTab(CreativeTabs.MATERIALS);
+	public static final Block DIAMOND_GLASS_PANE = new PaneGlass("diamond_glass_pane").setCreativeTab(CreativeTabs.MATERIALS);
 
 }
