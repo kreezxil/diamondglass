@@ -8,24 +8,18 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 public class PaneGlass extends PaneBase {
-	
+
 	public PaneGlass(String name) {
 		super(Material.GLASS, name);
 		setHardness(125f);
 		setResistance(6000f);
 	}
-	
+
 	@Override
-	public BlockRenderLayer getBlockLayer(){
+	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.TRANSLUCENT;
 	}
-	
-	@Override
-	public boolean isOpaqueCube(IBlockState state){
-		return false;
-	}
 
-	
 	@Override
 	public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos,
 			EnumFacing side) {
@@ -36,8 +30,5 @@ public class PaneGlass extends PaneBase {
 		}
 		return super.shouldSideBeRendered(blockState, blockAccess, pos, side);
 	}
-
-	
-
 
 }

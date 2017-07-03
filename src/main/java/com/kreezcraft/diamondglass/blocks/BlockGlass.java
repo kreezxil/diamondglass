@@ -14,18 +14,17 @@ public class BlockGlass extends BlockBase {
 		setHardness(125f);
 		setResistance(6000f);
 	}
-	
+
 	@Override
-	public BlockRenderLayer getBlockLayer(){
+	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.TRANSLUCENT;
 	}
-	
+
 	@Override
-	public boolean isOpaqueCube(IBlockState state){
+	public boolean isOpaqueCube(IBlockState state) {
 		return false;
 	}
 
-	
 	@Override
 	public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos,
 			EnumFacing side) {
@@ -37,5 +36,4 @@ public class BlockGlass extends BlockBase {
 		return super.shouldSideBeRendered(blockState, blockAccess, pos, side);
 	}
 
-	
 }
