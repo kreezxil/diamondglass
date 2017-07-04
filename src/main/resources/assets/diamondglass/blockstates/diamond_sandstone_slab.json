@@ -16,7 +16,7 @@
 				"model": "half_slab"
 			},
 			"double": {
-				"model": "diamondglass:diamond_sandstone_all"
+				"model": "diamondglass:diamond_sandstone_normal"
 			}
 		}
 	}

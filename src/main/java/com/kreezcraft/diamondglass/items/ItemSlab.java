@@ -106,14 +106,4 @@ public class ItemSlab extends ItemBlock {
 		return world.setBlockState(pos, realBlock.getDouble());
 	}
 
-	@Override
-	public String getUnlocalizedName(ItemStack stack) {
-		return this.block.getUnlocalizedName() + "." + stack.getMetadata();
-	}
-
-	@Override
-	public int getMetadata(int damage) {
-		return damage;
-	}
-
 }

@@ -3,16 +3,16 @@ tile.diamondglass.diamond_glass_pane.name=Diamond Glass Pane
 
 tile.diamondglass.diamond_sand.name=Diamond Sand
 
-tile.diamondglass.diamond_sandstone.name=Diamond Sand Stone
-tile.diamondglass.diamond_smooth_sandstone.name=Diamond Smooth Stone
-tile.diamondglass.diamond_chiseled_sandstone.name=Diamond Chiseled Sandstone
+tile.diamondglass.diamond_sandstone.name=Diamond Sandstone
+tile.diamondglass.diamond_sandstone_smooth.name=Smooth Diamond Sandstone
+tile.diamondglass.diamond_sandstone_chisel.name=Chiseled Diamond Sandstone
 
 tile.diamondglass.diamond_sandstone_stairs.name=Diamond Sandstone Stairs
-tile.diamondglass.diamond_smooth_sandstone_stairs.name=Diamond Smooth Sandstone Stairs
-tile.diamondglass.diamond_chiseled_sandstone_stairs.name=Diamond Chiseled Sandstone Stairs
+tile.diamondglass.diamond_sandstone_smooth_stairs.name=Smooth Diamond Sandstone Stairs
+tile.diamondglass.diamond_sandstone_chisel_stairs.name=Chiseled Diamond Sandstone Stairs
 
 tile.diamondglass.diamond_sandstone_slab.name=Diamond Sandstone Slab
-tile.diamondglass.diamond_smooth_sandstone_slab.name=Diamond Smooth Sandstone Slab
-tile.diamondglass.diamond_chiseled_sandstone_slab.name=Diamond Chiseled Sandstone Slab
+tile.diamondglass.diamond_sandstone_smooth_slab.name=Smooth Diamond Sandstone Slab
+tile.diamondglass.diamond_sandstone_chisel_slab.name=Chiseled Diamond Sandstone Slab
 
-item.diamondglass.diamonium.name=A placeholder thing called Diamonium
+item.diamondglass.diamonium.name=Diamonium

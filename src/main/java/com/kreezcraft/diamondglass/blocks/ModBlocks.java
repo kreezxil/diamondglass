@@ -19,8 +19,8 @@ public class ModBlocks {
 	public static final Block DIAMOND_CHISELED_SANDSTONE = new BlockStandard("diamond_sandstone_chisel").setCreativeTab(CreativeTabs.MATERIALS);
 
 	public static final Block DIAMOND_SANDSTONE_STAIRS = new ModStairs("diamond_sandstone_stairs", DIAMOND_SANDSTONE).setCreativeTab(CreativeTabs.MATERIALS);
-	public static final Block DIAMOND_SMOOTH_SANDSTONE_STAIRS = new ModStairs("diamond_smooth_sandstone_stairs", DIAMOND_SANDSTONE).setCreativeTab(CreativeTabs.MATERIALS);
-	public static final Block DIAMOND_CHISELED_SANDSTONE_STAIRS = new ModStairs("diamond_chiseled_sandstone_stairs", DIAMOND_SANDSTONE).setCreativeTab(CreativeTabs.MATERIALS);
+	public static final Block DIAMOND_SMOOTH_SANDSTONE_STAIRS = new ModStairs("diamond_sandstone_smooth_stairs", DIAMOND_SANDSTONE).setCreativeTab(CreativeTabs.MATERIALS);
+	public static final Block DIAMOND_CHISELED_SANDSTONE_STAIRS = new ModStairs("diamond_sandstone_chisel_stairs", DIAMOND_SANDSTONE).setCreativeTab(CreativeTabs.MATERIALS);
 
 	public static final Block DIAMOND_SANDSTONE_SLAB = new ModSlab("diamond_sandstone_slab", DIAMOND_SANDSTONE).setCreativeTab(CreativeTabs.MATERIALS);
 	public static final Block DIAMOND_SMOOTH_SANDSTONE_SLAB = new ModSlab("diamond_sandstone_smooth_slab", DIAMOND_SANDSTONE).setCreativeTab(CreativeTabs.MATERIALS);
