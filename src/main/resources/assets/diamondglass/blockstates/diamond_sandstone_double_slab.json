@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "cube_all",
+        "textures": {
+            "all": "diamondglass:blocks/diamond_sandstone"
+        }
+    },
+    "variants": {
+        "normal": { "model": "diamondglass:block/diamond_sandstone_normal" },
+        "all":    { "model": "diamondglass:block/diamond_sandstone_all" }
+    }
+}
