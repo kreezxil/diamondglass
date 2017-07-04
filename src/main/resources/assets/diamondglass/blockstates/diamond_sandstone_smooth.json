@@ -1,7 +1,7 @@
- {
+{
     "forge_marker": 1,
     "defaults": {
-        "model": "diamondglass:diamond_sandstone_normal"
+        "model": "diamondglass:diamond_sandstone_smooth"
     },
     "variants": {
         "normal": [{}],

@@ -6,25 +6,20 @@ import com.kreezcraft.diamondglass.items.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModStairs extends BlockStairs implements IHasModel {
 
 	protected String name;
-	
+
 	public ModStairs(String name, Block block) {
 		super(block.getDefaultState());
 		this.name = name;
 		setUnlocalizedName(DiamondGlass.MODID + "." + name);
 		setRegistryName(name);
-	    useNeighborBrightness = true;
+		useNeighborBrightness = true;
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));
 	}
@@ -34,14 +29,14 @@ public class ModStairs extends BlockStairs implements IHasModel {
 		DiamondGlass.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 
-    @Override
-    public boolean isOpaqueCube(IBlockState state) {
-        return false;
-    }
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
+		return false;
+	}
 
-    @Override
-    public boolean isFullCube(IBlockState state) {
-        return false;
-    }
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
 
 }
