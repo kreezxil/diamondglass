@@ -1,5 +1,10 @@
-{
+ {
+    "forge_marker": 1,
+    "defaults": {
+        "model": "diamondglass:diamond_sandstone_chiseled"
+    },
     "variants": {
-        "normal": { "model": "diamondglass:block/diamond_sandstone_chiseled" }
+        "normal": [{}],
+        "inventory": [{}]
     }
 }

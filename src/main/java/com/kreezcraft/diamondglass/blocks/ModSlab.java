@@ -37,12 +37,12 @@ public class ModSlab extends BlockSlab implements IHasModel {
 		setRegistryName(name);
         useNeighborBrightness = true;
 		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));
+		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));//needs custom ItemBlock, invalid.
 	}
 
 	@Override
 	public void registerModels() {
-		DiamondGlass.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		DiamondGlass.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");//will need to be adjusted for custom ItemBlock
 	}
 
 	public ModSlab getSingleSlab() {
