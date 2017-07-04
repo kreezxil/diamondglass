@@ -11,7 +11,7 @@ public class BlockGlass extends BlockBase {
 
 	public BlockGlass(String name) {
 		super(Material.GLASS, name);
-		setHardness(125f);
+		setHardness(25f);
 		setResistance(6000f);
 	}
 

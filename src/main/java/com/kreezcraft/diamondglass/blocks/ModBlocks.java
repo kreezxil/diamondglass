@@ -14,6 +14,9 @@ public class ModBlocks {
 	public static final Block DIAMOND_SAND = new BlockStandard("diamond_sand").setCreativeTab(CreativeTabs.MATERIALS);
 	public static final Block DIAMOND_GLASS_PANE = new PaneGlass("diamond_glass_pane").setCreativeTab(CreativeTabs.MATERIALS);
 
+	public static final Block DIAMOND_GLASS_STAIRS = new ModStairs("diamond_glass_stairs", DIAMOND_GLASS).setCreativeTab(CreativeTabs.MATERIALS);
+	public static final Block DIAMOND_GLASS_SLAB = new ModStairs("diamond_glass_slab", DIAMOND_GLASS).setCreativeTab(CreativeTabs.MATERIALS);
+
 	public static final Block DIAMOND_SANDSTONE = new BlockStandard("diamond_sandstone").setCreativeTab(CreativeTabs.MATERIALS);
 	public static final Block DIAMOND_SMOOTH_SANDSTONE = new BlockStandard("diamond_sandstone_smooth").setCreativeTab(CreativeTabs.MATERIALS);
 	public static final Block DIAMOND_CHISELED_SANDSTONE = new BlockStandard("diamond_sandstone_chisel").setCreativeTab(CreativeTabs.MATERIALS);
