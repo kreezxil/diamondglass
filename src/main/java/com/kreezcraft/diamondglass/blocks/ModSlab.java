@@ -42,7 +42,7 @@ public class ModSlab extends BlockSlab implements IHasModel {
 
 	@Override
 	public void registerModels() {
-		DiamondGlass.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");//will need to be adjusted for custom ItemBlock
+		DiamondGlass.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "half=bottom");
 	}
 
 	public ModSlab getSingleSlab() {
