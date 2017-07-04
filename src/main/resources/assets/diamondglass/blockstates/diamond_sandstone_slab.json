@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "diamondglass:block/diamond_half_slab_sandstone" },
+        "half=top": { "model": "diamondglass:block/diamond_upper_slab_sandstone" }
+    }
+}
