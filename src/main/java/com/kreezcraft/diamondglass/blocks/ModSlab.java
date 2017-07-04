@@ -5,6 +5,11 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
+import com.kreezcraft.diamondglass.DiamondGlass;
+import com.kreezcraft.diamondglass.client.IHasModel;
+import com.kreezcraft.diamondglass.items.ItemSlab;
+import com.kreezcraft.diamondglass.items.ModItems;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -24,12 +29,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import com.kreezcraft.diamondglass.DiamondGlass;
-import com.kreezcraft.diamondglass.client.IHasModel;
-import com.kreezcraft.diamondglass.items.ItemSlab;
-import com.kreezcraft.diamondglass.items.ModItems;
-
-public class ModSlab extends Block implements IHasModel{
+public class ModSlab extends Block implements IHasModel {
 
 	public static final PropertyEnum<SlabVariant> VARIANT = PropertyEnum.<SlabVariant>create("half", SlabVariant.class);
 
@@ -155,8 +155,9 @@ public class ModSlab extends Block implements IHasModel{
 	}
 
 	public static enum SlabVariant implements IStringSerializable {
-		LOWER("lower", new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D), 0), UPPER("upper",
-				new AxisAlignedBB(0.0D, 0.5D, 0.0D, 1.0D, 1.0D, 1.0D), 1), DOUBLE("double", FULL_BLOCK_AABB, 2);
+		LOWER("lower", new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D), 0),
+		UPPER("upper", new AxisAlignedBB(0.0D, 0.5D, 0.0D, 1.0D, 1.0D, 1.0D), 1),
+		DOUBLE("double", FULL_BLOCK_AABB, 2);
 
 		private String name;
 		private AxisAlignedBB aabb;
@@ -185,7 +186,7 @@ public class ModSlab extends Block implements IHasModel{
 	@Override
 	public void registerModels() {
 		DiamondGlass.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "half=lower");
-		
+
 	}
 
 }

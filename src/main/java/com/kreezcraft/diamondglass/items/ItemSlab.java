@@ -34,8 +34,7 @@ public class ItemSlab extends ItemBlock {
 	}
 
 	@Override
-	public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand,
-			EnumFacing facing, float hitX, float hitY, float hitZ) {
+	public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		ItemStack stack = player.getHeldItem(hand);
 		if (!world.isRemote)
 			System.out.println("Calling onItemUse with facing " + facing.getName() + " and hitY " + hitY);
@@ -45,8 +44,7 @@ public class ItemSlab extends ItemBlock {
 			pos = pos.offset(facing);
 		state = world.getBlockState(pos);
 		IBlockState placeState = getByHitY(hitY);
-		if (player.canPlayerEdit(pos, facing, stack) && facing.getAxis().isVertical()
-				&& state.getBlock() == this.block) {
+		if (player.canPlayerEdit(pos, facing, stack) && facing.getAxis().isVertical() && state.getBlock() == this.block) {
 			placeState = this.realBlock.getDouble();
 			if (doubleSlab(world, pos))
 				return shrinkAndSucceed(world, pos, player, stack);
@@ -57,16 +55,14 @@ public class ItemSlab extends ItemBlock {
 			placeState = realBlock.getOpposite(placeState);
 			if (world.setBlockState(pos, placeState))
 				return shrinkAndSucceed(world, pos, player, stack);
-		} else if (player.canPlayerEdit(pos, facing, stack) && facing.getAxis().isHorizontal()
-				&& state.getBlock() == this.block && canBeMerged(state, placeState)) {
+		} else if (player.canPlayerEdit(pos, facing, stack) && facing.getAxis().isHorizontal() && state.getBlock() == this.block && canBeMerged(state, placeState)) {
 			if (doubleSlab(world, pos))
 				return shrinkAndSucceed(world, pos, player, stack);
 		}
 		return EnumActionResult.FAIL;
 	}
 
-	private boolean validEditable(IBlockState state, World world, BlockPos pos, EnumFacing facing, ItemStack stack,
-			EntityPlayer player) {
+	private boolean validEditable(IBlockState state, World world, BlockPos pos, EnumFacing facing, ItemStack stack, EntityPlayer player) {
 		return state.getBlock().isReplaceable(world, pos) && player.canPlayerEdit(pos, facing, stack);
 	}
 
@@ -89,16 +85,13 @@ public class ItemSlab extends ItemBlock {
 
 	@Override
 	@SideOnly(Side.CLIENT)
-	public boolean canPlaceBlockOnSide(World world, BlockPos pos, EnumFacing side, EntityPlayer player,
-			ItemStack stack) {
+	public boolean canPlaceBlockOnSide(World world, BlockPos pos, EnumFacing side, EntityPlayer player, ItemStack stack) {
 		return world.checkNoEntityCollision(Block.FULL_BLOCK_AABB.offset(pos.offset(side)), null);
 	}
 
 	private EnumActionResult shrinkAndSucceed(World world, BlockPos pos, EntityPlayer player, ItemStack stack) {
-		SoundType soundtype = world.getBlockState(pos).getBlock().getSoundType(world.getBlockState(pos), world, pos,
-				player);
-		world.playSound(player, pos, soundtype.getPlaceSound(), SoundCategory.BLOCKS,
-				(soundtype.getVolume() + 1.0F) / 2.0F, soundtype.getPitch() * 0.8F);
+		SoundType soundtype = world.getBlockState(pos).getBlock().getSoundType(world.getBlockState(pos), world, pos, player);
+		world.playSound(player, pos, soundtype.getPlaceSound(), SoundCategory.BLOCKS, (soundtype.getVolume() + 1.0F) / 2.0F, soundtype.getPitch() * 0.8F);
 		stack.shrink(1);
 		return EnumActionResult.SUCCESS;
 	}
