@@ -5,7 +5,7 @@
 				"bottom": "diamondglass:blocks/diamond_glass",
 				"top": "diamondglass:blocks/diamond_glass",
 				"side": "diamondglass:blocks/diamond_glass"
-    }
+        }
 	},
 	"variants": {
 		"half":{
