@@ -39,5 +39,4 @@ public class ModStairs extends BlockStairs implements IHasModel {
 		return false;
 	}
 
-
 }

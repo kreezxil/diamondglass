@@ -10,7 +10,7 @@ public class GlassSlab extends ModSlab {
 		setLightOpacity(0);
 		useNeighborBrightness = true;
 	}
-	
+
 	@Override
 	public boolean isFullCube(IBlockState state) {
 		return state.getValue(VARIANT) == SlabVariant.DOUBLE;
