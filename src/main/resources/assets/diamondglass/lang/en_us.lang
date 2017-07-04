@@ -7,12 +7,12 @@ tile.diamondglass.diamond_sandstone.name=Diamond Sand Stone
 tile.diamondglass.diamond_smooth_sandstone.name=Diamond Smooth Stone
 tile.diamondglass.diamond_chiseled_sandstone.name=Diamond Chiseled Sandstone
 
-tile.diamondglass.stair_diamond_sandstone.name=Diamond Sandstone Stairs
-tile.diamondglass.stair_diamond_smooth_sandstone.name=Diamond Smooth Sandstone Stairs
-tile.diamondglass.stair_diamond_chiseled_sandstone.name=Diamond Chiseled Sandstone Stairs
+tile.diamondglass.diamond_sandstone_stairs.name=Diamond Sandstone Stairs
+tile.diamondglass.diamond_smooth_sandstone_stairs.name=Diamond Smooth Sandstone Stairs
+tile.diamondglass.diamond_chiseled_sandstone_stairs.name=Diamond Chiseled Sandstone Stairs
 
-tile.diamondglass.slab_diamond_sandstone.name=Diamond Sandstone Slab
-tile.diamondglass.slab_diamond_smooth_sandstone.name=Diamond Smooth Sandstone Slab
-tile.diamondglass.slab_diamond_chiseled_sandstone.name=Diamond Chiseled Sandstone Slab
+tile.diamondglass.diamond_sandstone_slab.name=Diamond Sandstone Slab
+tile.diamondglass.diamond_smooth_sandstone_slab.name=Diamond Smooth Sandstone Slab
+tile.diamondglass.diamond_chiseled_sandstone_slab.name=Diamond Chiseled Sandstone Slab
 
 item.diamondglass.diamonium.name=A placeholder thing called Diamonium
