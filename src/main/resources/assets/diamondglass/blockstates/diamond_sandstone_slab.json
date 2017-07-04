@@ -9,11 +9,14 @@
 	},
 	"variants": {
 		"half":{
-			"top": {
+			"upper": {
 				"model": "upper_slab"
 			},
-			"bottom": {
+			"lower": {
 				"model": "half_slab"
+			},
+			"double": {
+				"model": "diamondglass:diamond_sandstone_all"
 			}
 		}
 	}
