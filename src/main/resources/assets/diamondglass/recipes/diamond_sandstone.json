@@ -1,0 +1,16 @@
+{
+     "type": "forge:ore_shaped",
+     "pattern": [
+        "ss",
+        "ss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamond_sand"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamond_sandstone",
+        "count": 4
+     }
+ }

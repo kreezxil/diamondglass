@@ -1,0 +1,16 @@
+[
+{
+  "modId": "diamondglass",
+  "name": "Diamond Glass",
+  "description": "Glass made with Diamond with the attributes of Obsidian",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://minecraft.curseforge.com/projects/diamond-glass",
+  "updateUrl": "",
+  "authorList": ["Kreezxil"],
+  "credits": "MMD on Discord, Shadows-of-fire from Discord, Jriwanek for making MMD on Discord, Pure_Stone9 and Tristn1 for inspiring me to do more than what the 1.0.0 version was ..., my mom, God, and my brain",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

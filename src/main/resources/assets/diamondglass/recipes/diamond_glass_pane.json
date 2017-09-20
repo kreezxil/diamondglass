@@ -1,0 +1,16 @@
+{
+      "type": "forge:ore_shaped",
+     "pattern": [
+        "sss",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamond_glass"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamond_glass_pane",
+        "count": 16
+     }
+ }

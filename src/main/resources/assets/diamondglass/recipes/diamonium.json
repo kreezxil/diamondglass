@@ -1,0 +1,14 @@
+{
+     "type": "forge:ore_shapeless",
+    "ingredients": [
+	   {
+			"item": "minecraft:diamond"
+		},
+        {
+			"item": "minecraft:flint"
+		}
+	],
+    "result": {
+        "item": "diamondglass:diamonium"
+    }
+}

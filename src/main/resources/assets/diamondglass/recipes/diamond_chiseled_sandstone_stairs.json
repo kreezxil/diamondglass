@@ -1,0 +1,17 @@
+{
+     "type": "forge:ore_shaped",
+     "pattern": [
+        "  s",
+        " ss",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamond_chiseled_sandstone"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamond_chiseled_sandstone_stairs",
+        "count": 6
+     }
+ }
