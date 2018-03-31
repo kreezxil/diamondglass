@@ -15,6 +15,8 @@ public class GlassSlab extends ModSlab {
 		super(name, block);
 		setLightOpacity(0);
 		useNeighborBrightness = true;
+		setHardness(25f);
+		setResistance(6000f);
 	}
 
 	@Override

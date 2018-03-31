@@ -11,7 +11,9 @@ public class GlassStairs extends ModStairs {
 	public GlassStairs(String name, Block block) {
 		super(name, block);
 		setLightOpacity(0);
-	}
+		setHardness(25f);
+		setResistance(6000f);
+}
 
 	@Override
 	public boolean isNormalCube(IBlockState state) {

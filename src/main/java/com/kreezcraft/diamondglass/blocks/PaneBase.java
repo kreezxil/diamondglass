@@ -1,5 +1,7 @@
 package com.kreezcraft.diamondglass.blocks;
 
+import java.util.Random;
+
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
 import com.kreezcraft.diamondglass.items.InitItems;
@@ -38,5 +40,9 @@ public class PaneBase extends BlockPane implements IHasModel {
 		IBlockState state2 = world.getBlockState(pos.offset(side));
 		return state2.getBlock() == this ? !(this.getActualState(state2, world, pos) == this.getActualState(state, world, pos)) : true;
 	}
-
+	
+	@Override
+	public int quantityDropped(Random random) {
+		return 1;
+	}
 }

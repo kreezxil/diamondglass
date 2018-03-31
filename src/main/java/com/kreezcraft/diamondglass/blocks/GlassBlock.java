@@ -1,5 +1,7 @@
 package com.kreezcraft.diamondglass.blocks;
 
+import java.util.Random;
+
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.blocks.ModSlab.SlabVariant;
 import com.kreezcraft.diamondglass.client.IHasModel;
@@ -46,6 +48,11 @@ public class GlassBlock extends BlockGlass implements IHasModel {
 	@Override
 	public boolean shouldSideBeRendered(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
 		return !(world.getBlockState(pos.offset(side)).getBlock() == this);
+	}
+
+	@Override
+	public int quantityDropped(Random random) {
+		return 1;
 	}
 
 	@Override
