@@ -27,6 +27,8 @@ public class DiamondSand extends BlockStandard {
     
 	public DiamondSand(String name) {
 		super(Material.SAND, name);
+		setHarvestLevel("shovel", 1);
+		setHardness(3f);
 	}
 
    /**

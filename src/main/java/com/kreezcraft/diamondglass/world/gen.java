@@ -25,7 +25,7 @@ public class gen implements IWorldGenerator {
 	}
 	
 	private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		generateOre(InitBlocks.DIAMOND_SAND.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 49, 80, 4 + random.nextInt(16), 6);
+		generateOre(InitBlocks.DIAMOND_SAND.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 5, 30, 4 + random.nextInt(3), 6);
 	}
 	
 	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) {
