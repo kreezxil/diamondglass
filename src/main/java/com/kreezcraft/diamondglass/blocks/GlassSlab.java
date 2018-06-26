@@ -1,7 +1,10 @@
 package com.kreezcraft.diamondglass.blocks;
 
+import com.kreezcraft.diamondglass.DiamondConfig;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
@@ -15,8 +18,8 @@ public class GlassSlab extends ModSlab {
 		super(name, block);
 		setLightOpacity(0);
 		useNeighborBrightness = true;
-		setHardness(25f);
-		setResistance(6000f);
+		setHardness(DiamondConfig.diamondLevel.diamondHardness);
+		setResistance(DiamondConfig.diamondLevel.diamondResitance);
 	}
 
 	@Override
@@ -47,6 +50,11 @@ public class GlassSlab extends ModSlab {
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
+	}
+
+	@Override
+	public boolean canEntityDestroy(IBlockState state, IBlockAccess world, BlockPos pos, Entity entity) {
+		return DiamondConfig.diamondLevel.isInvulnerable ? false : super.canEntityDestroy(state, world, pos, entity);
 	}
 
 }

@@ -2,6 +2,7 @@ package com.kreezcraft.diamondglass.blocks;
 
 import java.util.Random;
 
+import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.blocks.ModSlab.SlabVariant;
 import com.kreezcraft.diamondglass.client.IHasModel;
@@ -13,6 +14,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
@@ -25,8 +27,8 @@ public class GlassBlock extends BlockGlass implements IHasModel {
 	public GlassBlock(String name) {
 		super(Material.GLASS, true);
 		setLightOpacity(0);
-		setHardness(25f);
-		setResistance(6000f);
+		setHardness(DiamondConfig.diamondLevel.diamondHardness);
+		setResistance(DiamondConfig.diamondLevel.diamondResitance);
 		setSoundType(SoundType.GLASS);
 		setCreativeTab(DiamondGlass.creativeTab);
 		setRegistryName(name);
@@ -58,6 +60,11 @@ public class GlassBlock extends BlockGlass implements IHasModel {
 	@Override
 	public void registerModels() {
 		DiamondGlass.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+	}
+
+	@Override
+	public boolean canEntityDestroy(IBlockState state, IBlockAccess world, BlockPos pos, Entity entity) {
+		return DiamondConfig.diamondLevel.isInvulnerable ? false : super.canEntityDestroy(state, world, pos, entity);
 	}
 
 }

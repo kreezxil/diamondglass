@@ -5,6 +5,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
+import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
 import com.kreezcraft.diamondglass.items.ItemSlab;
@@ -43,8 +44,8 @@ public class ModSlab extends Block implements IHasModel {
 	public ModSlab(String name, Block block) {
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
-		setHardness(3f);
-		setResistance(5f);
+		setHardness(DiamondConfig.nondiamondLevel.standardHardness);
+		setResistance(DiamondConfig.nondiamondLevel.standardResistance);
 		setCreativeTab(DiamondGlass.creativeTab);
 		setRegistryName(name);
 		setUnlocalizedName(DiamondGlass.MODID + "." + name);

@@ -1,5 +1,6 @@
 package com.kreezcraft.diamondglass.blocks;
 
+import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
 import com.kreezcraft.diamondglass.items.InitItems;
@@ -21,6 +22,8 @@ public class ModStairs extends BlockStairs implements IHasModel {
 		setCreativeTab(DiamondGlass.creativeTab);
 		setUnlocalizedName(DiamondGlass.MODID + "." + name);
 		setRegistryName(name);
+		setHardness(DiamondConfig.nondiamondLevel.standardHardness);
+		setResistance(DiamondConfig.nondiamondLevel.standardResistance);
 		useNeighborBrightness = true;
 		InitBlocks.BLOCKS.add(this);
 		InitItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));

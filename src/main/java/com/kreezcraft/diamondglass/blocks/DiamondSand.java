@@ -2,6 +2,7 @@ package com.kreezcraft.diamondglass.blocks;
 
 import java.util.Random;
 
+import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
 import com.kreezcraft.diamondglass.items.InitItems;
@@ -28,7 +29,7 @@ public class DiamondSand extends BlockStandard {
 	public DiamondSand(String name) {
 		super(Material.SAND, name);
 		setHarvestLevel("shovel", 1);
-		setHardness(3f);
+		setHardness(DiamondConfig.diamondLevel.diamondsandHardness);
 	}
 
    /**

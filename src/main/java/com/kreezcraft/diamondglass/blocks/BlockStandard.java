@@ -1,5 +1,7 @@
 package com.kreezcraft.diamondglass.blocks;
 
+import com.kreezcraft.diamondglass.DiamondConfig;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -7,8 +9,8 @@ public class BlockStandard extends BlockBase {
 
 	public BlockStandard(String name) {
 		super(Material.ROCK, name);
-		setHardness(3f);
-		setResistance(5f);
+		setHardness(DiamondConfig.nondiamondLevel.standardHardness);
+		setResistance(DiamondConfig.nondiamondLevel.standardResistance);
 	}
 
 	public BlockStandard(Material material, String name) {
