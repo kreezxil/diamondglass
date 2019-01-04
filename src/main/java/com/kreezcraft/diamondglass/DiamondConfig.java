@@ -22,9 +22,9 @@ public class DiamondConfig {
 		public float diamondHardness = 25f;
 
 		@Config.Comment({ "Set the explosion resistance of diamond glass",
-				"Please note that stopping the blue wither skull damage is impossible via this setting." })
+				"6000 will protect against a nuke, but 12000 will protect against the wither!" })
 		@Config.Name("Glass Resistance")
-		public float diamondResitance = 6000f;
+		public float diamondResitance = 12000f;
 		
 		@Config.Comment({"Make Diamond Glass Invulnerable to all attacks"})
 		@Config.Name("Invulnerable")

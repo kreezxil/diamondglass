@@ -1,0 +1,17 @@
+{
+     "type": "forge:ore_shaped",
+     "pattern": [
+        "  s",
+        " ss",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamond_glass_pink"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamond_glass_stairs_pink",
+        "count": 6
+     }
+ }

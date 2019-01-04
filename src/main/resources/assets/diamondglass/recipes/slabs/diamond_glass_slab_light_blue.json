@@ -1,0 +1,15 @@
+{
+     "type": "forge:ore_shaped",
+     "pattern": [
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamond_glass_light_blue"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamond_glass_slab_light_blue",
+        "count": 6
+     }
+ }

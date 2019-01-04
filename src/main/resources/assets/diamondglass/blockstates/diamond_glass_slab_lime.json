@@ -1,0 +1,23 @@
+{
+	"forge_marker": 1,
+	"defaults":{
+	    "textures": {
+				"bottom": "diamondglass:blocks/diamond_glass_lime",
+				"top": "diamondglass:blocks/diamond_glass_lime",
+				"side": "diamondglass:blocks/diamond_glass_lime"
+        }
+	},
+	"variants": {
+		"half":{
+			"upper": {
+				"model": "upper_slab"
+			},
+			"lower": {
+				"model": "half_slab"
+			},
+			"double": {
+				"model": "diamondglass:diamond_glass_lime_normal"
+			}
+		}
+	}
+}

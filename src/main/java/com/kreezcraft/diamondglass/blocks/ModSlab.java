@@ -8,8 +8,9 @@ import javax.annotation.Nullable;
 import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
+import com.kreezcraft.diamondglass.init.InitBlocks;
+import com.kreezcraft.diamondglass.init.InitItems;
 import com.kreezcraft.diamondglass.items.ItemSlab;
-import com.kreezcraft.diamondglass.items.InitItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

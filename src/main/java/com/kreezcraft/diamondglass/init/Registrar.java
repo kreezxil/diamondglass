@@ -1,8 +1,6 @@
 package com.kreezcraft.diamondglass.init;
 
-import com.kreezcraft.diamondglass.blocks.InitBlocks;
 import com.kreezcraft.diamondglass.client.IHasModel;
-import com.kreezcraft.diamondglass.items.InitItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

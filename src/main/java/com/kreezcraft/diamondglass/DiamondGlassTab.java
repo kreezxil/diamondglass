@@ -1,6 +1,6 @@
 package com.kreezcraft.diamondglass;
 
-import com.kreezcraft.diamondglass.blocks.InitBlocks;
+import com.kreezcraft.diamondglass.init.InitBlocks;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

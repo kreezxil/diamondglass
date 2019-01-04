@@ -3,7 +3,7 @@ package com.kreezcraft.diamondglass.world;
 import java.util.Random;
 
 import com.google.common.base.Predicate;
-import com.kreezcraft.diamondglass.blocks.InitBlocks;
+import com.kreezcraft.diamondglass.init.InitBlocks;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;

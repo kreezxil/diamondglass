@@ -1,0 +1,20 @@
+{
+     "type": "forge:ore_shaped",
+     "pattern": [
+        "sss",
+        "sds",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "minecraft:coal_block"
+         },
+         "d": {
+            "item": "diamondglass:diamond_sand"
+         }
+     },
+    "result": {
+        "item": "minecraft:diamond",
+        "count": 1
+     }
+ }

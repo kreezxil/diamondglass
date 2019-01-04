@@ -1,7 +1,7 @@
 package com.kreezcraft.diamondglass.recipes;
 
-import com.kreezcraft.diamondglass.blocks.InitBlocks;
-import com.kreezcraft.diamondglass.items.InitItems;
+import com.kreezcraft.diamondglass.init.InitBlocks;
+import com.kreezcraft.diamondglass.init.InitItems;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;

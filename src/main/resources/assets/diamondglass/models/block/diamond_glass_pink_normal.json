@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+			"bottom": "diamondglass:blocks/diamond_glass_pink",
+			"top": "diamondglass:blocks/diamond_glass_pink",
+			"side": "diamondglass:blocks/diamond_glass_pink"
+    }
+}

@@ -2,6 +2,7 @@ package com.kreezcraft.diamondglass.items;
 
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
+import com.kreezcraft.diamondglass.init.InitItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
