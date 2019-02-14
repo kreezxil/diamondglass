@@ -1,0 +1,41 @@
+{
+     "type": "forge:ore_shaped",
+     "pattern": [
+        "123",
+        "456",
+        "789"
+     ],
+     "key": {
+        "1": {
+            "item": "diamondglass:diamond_glass_red"
+         },
+        "2": {
+            "item": "diamondglass:diamond_glass_orange"
+         },
+        "3": {
+            "item": "diamondglass:diamond_glass_yellow"
+         },
+        "4": {
+            "item": "diamondglass:diamond_glass_lime"
+         },
+        "5": {
+            "item": "diamondglass:diamond_glass_green"
+         },
+        "6": {
+            "item": "diamondglass:diamond_glass_light_blue"
+         },
+        "7": {
+            "item": "diamondglass:diamond_glass_blue"
+         },
+        "8": {
+            "item": "diamondglass:diamond_glass_purple"
+         },
+        "9": {
+            "item": "diamondglass:diamond_glass_magenta"
+         }
+     },
+    "result": {
+        "item": "diamondglass:rainbow_glass_block",
+        "count": 9
+     }
+ }

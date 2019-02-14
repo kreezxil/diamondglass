@@ -89,3 +89,9 @@ tile.diamondglass.diamond_glass_stairs_purple.name=Diamond Glass Stairs Purple
 tile.diamondglass.diamond_glass_stairs_red.name=Diamond Glass Stairs Red
 tile.diamondglass.diamond_glass_stairs_white.name=Diamond Glass Stairs White
 tile.diamondglass.diamond_glass_stairs_yellow.name=Diamond Glass Stairs Yellow
+
+tile.diamondglass.rainbow_glass_block.name=Rainbow Diamond Glass
+tile.diamondglass.rainbow_glass_stairs.name=Rainbow Diamond Glass Stairs
+tile.diamondglass.rainbow_glass_slab.name=Rainbow Diamond Glass Slab
+tile.diamondglass.rainbow_glass_pane.name=Rainbow Diamond Glass Pane
+

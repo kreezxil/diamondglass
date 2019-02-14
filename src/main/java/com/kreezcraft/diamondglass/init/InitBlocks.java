@@ -35,6 +35,7 @@ public class InitBlocks {
 	public static final Block DIAMOND_GLASS_MAGENTA = new GlassBlock("diamond_glass_magenta");
 	public static final Block DIAMOND_GLASS_ORANGE = new GlassBlock("diamond_glass_orange");
 	public static final Block DIAMOND_GLASS_WHITE = new GlassBlock("diamond_glass_white");
+	public static final Block RAINBOW_BLOCK = new GlassBlock("rainbow_glass_block");
 
 	public static final Block DIAMOND_SAND = new DiamondSand("diamond_sand");
 
@@ -54,6 +55,8 @@ public class InitBlocks {
 	public static final Block DIAMOND_GLASS_PANE_MAGENTA = new PaneGlass("diamond_glass_pane_magenta");
 	public static final Block DIAMOND_GLASS_PANE_ORANGE = new PaneGlass("diamond_glass_pane_orange");
 	public static final Block DIAMOND_GLASS_PANE_WHITE = new PaneGlass("diamond_glass_pane_white");
+	
+	public static final Block RAINBOW_GLASS_PANE = new PaneGlass("rainbow_glass_pane");
 
 	public static final Block DIAMOND_GLASS_STAIRS = new GlassStairs("diamond_glass_stairs", DIAMOND_GLASS);
 	public static final Block DIAMOND_GLASS_STAIRS_BLACK = new GlassStairs("diamond_glass_stairs_black", DIAMOND_GLASS);
@@ -77,6 +80,8 @@ public class InitBlocks {
 	public static final Block DIAMOND_GLASS_STAIRS_ORANGE = new GlassStairs("diamond_glass_stairs_orange",
 			DIAMOND_GLASS);
 	public static final Block DIAMOND_GLASS_STAIRS_WHITE = new GlassStairs("diamond_glass_stairs_white", DIAMOND_GLASS);
+	
+	public static final Block RAINBOW_GLASS_STAIRS = new GlassStairs("rainbow_glass_stairs", DIAMOND_GLASS);
 
 	public static final Block DIAMOND_GLASS_SLAB = new GlassSlab("diamond_glass_slab", DIAMOND_GLASS);
 	public static final Block DIAMOND_GLASS_SLAB_BLACK = new GlassSlab("diamond_glass_slab_black", DIAMOND_GLASS);
@@ -96,7 +101,9 @@ public class InitBlocks {
 	public static final Block DIAMOND_GLASS_SLAB_MAGENTA = new GlassSlab("diamond_glass_slab_magenta", DIAMOND_GLASS);
 	public static final Block DIAMOND_GLASS_SLAB_ORANGE = new GlassSlab("diamond_glass_slab_orange", DIAMOND_GLASS);
 	public static final Block DIAMOND_GLASS_SLAB_WHITE = new GlassSlab("diamond_glass_slab_white", DIAMOND_GLASS);
-
+	
+	public static final Block RAINBOW_GLASS_SLAB = new GlassSlab("rainbow_glass_slab", DIAMOND_GLASS);
+	
 	public static final Block DIAMOND_SANDSTONE = new BlockStandard("diamond_sandstone");
 	public static final Block DIAMOND_SMOOTH_SANDSTONE = new BlockStandard("diamond_smooth_sandstone");
 	public static final Block DIAMOND_CHISELED_SANDSTONE = new BlockStandard("diamond_chiseled_sandstone");

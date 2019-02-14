@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "diamondglass:blocks/diamond_sandstone_bottom",
-        "top": "diamondglass:blocks/diamond_sandstone_top",
-        "side": "diamondglass:blocks/diamond_sandstone_normal"
-    }
-}
