@@ -2,6 +2,8 @@ package com.kreezcraft.diamondglass.blocks;
 
 import java.util.Random;
 
+import javax.annotation.Nullable;
+
 import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.blocks.ModSlab.SlabVariant;
@@ -35,7 +37,7 @@ public class GlassBlock extends BlockGlass implements IHasModel {
 		setRegistryName(name);
 		setUnlocalizedName(DiamondGlass.MODID + "." + name);
 		InitBlocks.BLOCKS.add(this);
-		InitItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));
+		InitItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));setHarvestLevel("pickaxe",1);
 	}
 
 	@Override
@@ -68,4 +70,14 @@ public class GlassBlock extends BlockGlass implements IHasModel {
 		return DiamondConfig.diamondLevel.isInvulnerable ? false : super.canEntityDestroy(state, world, pos, entity);
 	}
 
+	@Nullable
+	@Override
+	public String getHarvestTool(final IBlockState state) {
+		return super.getHarvestTool(state);
+	}
+
+	@Override
+	public boolean isToolEffective(final String type, final IBlockState state) {
+		return super.isToolEffective(type, state);
+	}
 }

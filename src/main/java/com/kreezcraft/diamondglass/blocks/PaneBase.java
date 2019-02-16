@@ -2,6 +2,8 @@ package com.kreezcraft.diamondglass.blocks;
 
 import java.util.Random;
 
+import javax.annotation.Nullable;
+
 import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
@@ -16,6 +18,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -30,10 +33,10 @@ public class PaneBase extends BlockPane implements IHasModel {
 		setUnlocalizedName(DiamondGlass.MODID + "." + name);
 		setRegistryName(name);
 		setCreativeTab(DiamondGlass.creativeTab);
-		setHardness(DiamondConfig.diamondLevel.diamondHardness);
-		setResistance(DiamondConfig.diamondLevel.diamondResitance);
+		setHardness(DiamondConfig.nondiamondLevel.standardHardness);
+		setResistance(DiamondConfig.nondiamondLevel.standardResistance);
 		InitBlocks.BLOCKS.add(this);
-		InitItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));
+		InitItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));setHarvestLevel("pickaxe",1);
 	}
 
 	@Override
@@ -58,5 +61,15 @@ public class PaneBase extends BlockPane implements IHasModel {
 	public int quantityDropped(Random random) {
 		return 1;
 	}
-	
+
+	@Nullable
+	@Override
+	public String getHarvestTool(final IBlockState state) {
+		return super.getHarvestTool(state);
+	}
+
+	@Override
+	public boolean isToolEffective(final String type, final IBlockState state) {
+		return super.isToolEffective(type, state);
+	}
 }

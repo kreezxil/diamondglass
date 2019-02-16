@@ -19,7 +19,7 @@ public class GlassSlab extends ModSlab {
 		setLightOpacity(0);
 		useNeighborBrightness = true;
 		setHardness(DiamondConfig.diamondLevel.diamondHardness);
-		setResistance(DiamondConfig.diamondLevel.diamondResitance);
+		setResistance(DiamondConfig.diamondLevel.diamondResitance);setHarvestLevel("pickaxe",1);
 	}
 
 	@Override

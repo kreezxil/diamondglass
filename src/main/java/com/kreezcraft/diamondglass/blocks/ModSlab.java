@@ -39,8 +39,7 @@ public class ModSlab extends Block implements IHasModel {
 	 * @param name
 	 *            - The registry name.
 	 * @param block
-	 *            - Has no use, but don't be making slabs for nonexistent
-	 *            blocks.
+	 *            - Has no use, but don't be making slabs for nonexistent blocks.
 	 */
 	public ModSlab(String name, Block block) {
 		super(Material.ROCK);
@@ -53,6 +52,7 @@ public class ModSlab extends Block implements IHasModel {
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, SlabVariant.LOWER));
 		InitBlocks.BLOCKS.add(this);
 		InitItems.ITEMS.add(new ItemSlab(this));
+		setHarvestLevel("pickaxe", 1);
 	}
 
 	@Override
@@ -132,9 +132,8 @@ public class ModSlab extends Block implements IHasModel {
 	}
 
 	public static enum SlabVariant implements IStringSerializable {
-		LOWER("lower", new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D), 0),
-		UPPER("upper", new AxisAlignedBB(0.0D, 0.5D, 0.0D, 1.0D, 1.0D, 1.0D), 1),
-		DOUBLE("double", FULL_BLOCK_AABB, 2);
+		LOWER("lower", new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D), 0), UPPER("upper",
+				new AxisAlignedBB(0.0D, 0.5D, 0.0D, 1.0D, 1.0D, 1.0D), 1), DOUBLE("double", FULL_BLOCK_AABB, 2);
 
 		private String name;
 		private AxisAlignedBB aabb;
@@ -166,4 +165,14 @@ public class ModSlab extends Block implements IHasModel {
 
 	}
 
+	@Nullable
+	@Override
+	public String getHarvestTool(final IBlockState state) {
+		return super.getHarvestTool(state);
+	}
+
+	@Override
+	public boolean isToolEffective(final String type, final IBlockState state) {
+		return super.isToolEffective(type, state);
+	}
 }

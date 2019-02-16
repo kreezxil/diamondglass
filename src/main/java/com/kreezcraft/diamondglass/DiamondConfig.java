@@ -17,9 +17,9 @@ public class DiamondConfig {
 	public static DiamondClass diamondLevel = new DiamondClass();
 
 	public static class DiamondClass {
-		@Config.Comment({ "Set the hardness of diamond glass"})
+		@Config.Comment({ "Set the hardness of diamond glass","Set to 6 for moderate difficulty, set to 25 for obsidian level difficulty"})
 		@Config.Name("Glass Hardness")
-		public float diamondHardness = 25f;
+		public float diamondHardness = 6f;
 
 		@Config.Comment({ "Set the explosion resistance of diamond glass",
 				"6000 will protect against a nuke, but 12000 will protect against the wither!" })

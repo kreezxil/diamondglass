@@ -19,7 +19,7 @@ public class PaneGlass extends PaneBase {
 	public PaneGlass(String name) {
 		super(Material.GLASS, name);
 		setHardness(DiamondConfig.diamondLevel.diamondHardness);
-		setResistance(DiamondConfig.diamondLevel.diamondResitance);
+		setResistance(DiamondConfig.diamondLevel.diamondResitance);setHarvestLevel("pickaxe",1);
 	}
 
 	@Override

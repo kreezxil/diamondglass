@@ -1,5 +1,7 @@
 package com.kreezcraft.diamondglass.blocks;
 
+import javax.annotation.Nullable;
+
 import com.kreezcraft.diamondglass.DiamondConfig;
 import com.kreezcraft.diamondglass.DiamondGlass;
 import com.kreezcraft.diamondglass.client.IHasModel;
@@ -28,6 +30,7 @@ public class ModStairs extends BlockStairs implements IHasModel {
 		useNeighborBrightness = true;
 		InitBlocks.BLOCKS.add(this);
 		InitItems.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));
+		setHarvestLevel("pickaxe",1);
 	}
 
 	@Override
@@ -45,4 +48,14 @@ public class ModStairs extends BlockStairs implements IHasModel {
 		return false;
 	}
 
+	@Nullable
+	@Override
+	public String getHarvestTool(final IBlockState state) {
+		return super.getHarvestTool(state);
+	}
+
+	@Override
+	public boolean isToolEffective(final String type, final IBlockState state) {
+		return super.isToolEffective(type, state);
+	}
 }
