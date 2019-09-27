@@ -1,45 +1,72 @@
 package com.kreezcraft.diamondglass;
 
-import com.kreezcraft.diamondglass.proxy.CommonProxy;
-import com.kreezcraft.diamondglass.recipes.ModRecipes;
-import com.kreezcraft.diamondglass.world.gen;
 
+import com.kreezcraft.diamondglass.setup.*;
+import com.kreezcraft.diamondglass.blocks.fullBlock;
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-@Mod(modid = DiamondGlass.MODID, name = DiamondGlass.NAME, version = DiamondGlass.VERSION)
+@Mod(DiamondGlass.MODID)
 public class DiamondGlass {
 
 	public static final String MODID = "diamondglass";
-	public static final String NAME = "Diamond Glass";
-	public static final String VERSION = "@VERSION@";
 
-	@Mod.Instance(MODID)
-	public static DiamondGlass instance;
+	public static IProxy proxy = DistExecutor.runForDist(()->()->new ClientProxy(),()->()->new ServerProxy()
+	);
+	public static ModSetup setup = new ModSetup();
 
-	public static final DiamondGlassTab creativeTab = new DiamondGlassTab("Diamond Glass");
+	private static final Logger LOGGER = LogManager.getLogger();
 
-	@Mod.EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
-		GameRegistry.registerWorldGenerator(new gen(), 0);
+	public DiamondGlass() {
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 	}
 
-	@Mod.EventHandler
-	public void init(FMLInitializationEvent event) {
-		ModRecipes.init();
-
+	private void setup(final FMLCommonSetupEvent event) {
+		setup.init();
+		proxy.init();
 	}
 
-	@Mod.EventHandler
-	public void postInit(FMLPostInitializationEvent event) {
+	@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
+	public static class RegistryEvents {
 
+		@SubscribeEvent
+		public static void onBlockRegistry(final RegistryEvent.Register<Block> event) {
+            int i = 0;
+            while (i < ModBlocks.BLOCKS.size()) {
+                event.getRegistry().register(ModBlocks.BLOCKS.get(i));
+            }
+		}
+
+		@SubscribeEvent
+		public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
+		    Item.Properties properties = new Item.Properties().group(setup.itemGroup);
+		    //REGISTERING THE BLOCKS AS ITEMS
+            int i = 0;
+            while (i < ModBlocks.BLOCKS.size()) {
+                event.getRegistry().register(new BlockItem(ModBlocks.BLOCKS.get(i),properties).setRegistryName(ModBlocks.BLOCKS.get(i).getRegistryName()));
+            }
+
+            //registering the normal items here
+		}
 	}
 
-	@SidedProxy(serverSide = "com.kreezcraft.diamondglass.proxy.CommonProxy", clientSide = "com.kreezcraft.diamondglass.proxy.ClientProxy")
-	public static CommonProxy proxy;
-
+    public static ItemGroup modTab = new ItemGroup(MODID)
+    {
+        @Override
+        public ItemStack createIcon()
+        {
+            return new ItemStack(ModBlocks.DIAMOND_GLASS);
+        }
+    };
 }
