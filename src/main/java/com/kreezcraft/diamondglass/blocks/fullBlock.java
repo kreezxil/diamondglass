@@ -1,7 +1,5 @@
 package com.kreezcraft.diamondglass.blocks;
 
-import com.kreezcraft.diamondglass.setup.ModBlocks;
-import com.kreezcraft.diamondglass.setup.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -19,8 +17,6 @@ public class fullBlock extends Block {
     public fullBlock(String name, Material material, MaterialColor color) {
         super(Properties.create(material, color).sound(SoundType.GLASS).hardnessAndResistance(10f).lightValue(0));
         setRegistryName(name);
-        ModBlocks.BLOCKS.add(this);
-        //ModItems.ITEMS.add(this.asItem().setRegistryName(getRegistryName()));
     }
 
     @Override

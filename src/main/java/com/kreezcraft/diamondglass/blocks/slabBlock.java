@@ -1,6 +1,5 @@
 package com.kreezcraft.diamondglass.blocks;
 
-import com.kreezcraft.diamondglass.setup.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -18,7 +17,6 @@ public class slabBlock extends SlabBlock {
     public slabBlock(String name, Material material, MaterialColor color) {
         super(Properties.create(material, color).sound(SoundType.GLASS).hardnessAndResistance(10f).lightValue(0));
         setRegistryName(name);
-        ModBlocks.BLOCKS.add(this);
     }
 
     @Override

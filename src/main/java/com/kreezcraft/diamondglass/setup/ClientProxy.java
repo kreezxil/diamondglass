@@ -9,7 +9,6 @@ public class ClientProxy implements IProxy {
 
     @Override
     public void init() {
-        //ScreenManager.registerFactory(ModBlocks.FIRSTBLOCK_CONTAINER, FirstBlockScreen::new);
     }
 
     @Override
