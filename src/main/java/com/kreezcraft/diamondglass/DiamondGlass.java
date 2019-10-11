@@ -51,7 +51,7 @@ public class DiamondGlass {
         public static void onBlockRegistry(final RegistryEvent.Register<Block> event) {
             event.getRegistry().register(new fullBlock("diamond_chiseled_sandstone", Material.ROCK, MaterialColor.SAND));
             event.getRegistry().register(new fullBlock("diamond_glass", Material.GLASS, MaterialColor.CYAN));
-            event.getRegistry().register(new fullBlock("diamond_glass",Material.GLASS,MaterialColor.YELLOW));
+            event.getRegistry().register(new fullBlock("diamond_glass_yellow",Material.GLASS,MaterialColor.YELLOW));
             event.getRegistry().register(new fullBlock("diamond_glass_black", Material.GLASS, MaterialColor.BLACK));
             event.getRegistry().register(new fullBlock("diamond_glass_blue", Material.GLASS, MaterialColor.BLUE));
             event.getRegistry().register(new fullBlock("diamond_glass_brown", Material.GLASS, MaterialColor.BROWN));
@@ -88,7 +88,7 @@ public class DiamondGlass {
             event.getRegistry().register(new paneBlock("diamond_glass_pane_yellow", Material.GLASS, MaterialColor.YELLOW));
             event.getRegistry().register(new paneBlock("rainbow_glass_pane",Material.GLASS,MaterialColor.YELLOW));
             event.getRegistry().register(new slabBlock("diamond_chiseled_sandstone_slab", Material.ROCK,MaterialColor.SAND));
-            event.getRegistry().register(new slabBlock("diamond_glass_light_blue", Material.GLASS, MaterialColor.LIGHT_BLUE));
+            event.getRegistry().register(new slabBlock("diamond_glass_slab_light_blue", Material.GLASS, MaterialColor.LIGHT_BLUE));
             event.getRegistry().register(new slabBlock("diamond_glass_slab", Material.GLASS, MaterialColor.CYAN));
             event.getRegistry().register(new slabBlock("diamond_glass_slab_black", Material.GLASS, MaterialColor.BLACK));
             event.getRegistry().register(new slabBlock("diamond_glass_slab_blue", Material.GLASS, MaterialColor.BLUE));
@@ -108,7 +108,7 @@ public class DiamondGlass {
             event.getRegistry().register(new slabBlock("diamond_smooth_sandstone_slab",Material.GLASS,MaterialColor.SAND));
             event.getRegistry().register(new slabBlock("rainbow_glass_slab",Material.GLASS,MaterialColor.YELLOW));
             event.getRegistry().register(new stairsBlock("diamond_chiseled_sandstone_stairs", Material.ROCK, MaterialColor.SAND));
-            event.getRegistry().register(new stairsBlock("diamond_glass_light_blue", Material.GLASS, MaterialColor.LIGHT_BLUE));
+            event.getRegistry().register(new stairsBlock("diamond_glass_stairs_light_blue", Material.GLASS, MaterialColor.LIGHT_BLUE));
             event.getRegistry().register(new stairsBlock("diamond_glass_stairs", Material.GLASS, MaterialColor.CYAN));
             event.getRegistry().register(new stairsBlock("diamond_glass_stairs_black", Material.GLASS, MaterialColor.BLACK));
             event.getRegistry().register(new stairsBlock("diamond_glass_stairs_blue", Material.GLASS, MaterialColor.BLUE));
