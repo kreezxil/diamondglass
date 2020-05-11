@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "diamondglass:blocks/rainbowglass",
+        "top": "diamondglass:blocks/rainbowglass",
+        "side": "diamondglass:blocks/rainbowglass"
+    }
+}

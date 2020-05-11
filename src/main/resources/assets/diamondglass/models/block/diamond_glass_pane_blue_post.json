@@ -1,7 +1,0 @@
-{
-    "parent": "block/pane_post",
-    "textures": {
-        "edge": "diamondglass:blocks/diamond_glass_blue",
-        "pane": "diamondglass:blocks/diamond_glass_blue"
-    }
-}

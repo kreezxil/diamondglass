@@ -1,0 +1,16 @@
+{
+      "type": "minecraft:crafting_shaped",
+     "pattern": [
+        "sss",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamondglass_brown"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamondglasspane_brown",
+        "count": 16
+     }
+ }

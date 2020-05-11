@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "diamondglass:blocks/diamondglass_cyan",
+        "top": "diamondglass:blocks/diamondglass_cyan",
+        "side": "diamondglass:blocks/diamondglass_cyan"
+    }
+}

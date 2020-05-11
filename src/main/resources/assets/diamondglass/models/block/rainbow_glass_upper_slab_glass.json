@@ -1,8 +1,0 @@
-{
-    "parent": "block/upper_slab",
-    "textures": {
-        "bottom": "diamondglass:blocks/rainbow",
-        "top": "diamondglass:blocks/rainbow",
-        "side": "diamondglass:blocks/rainbow"
-    }
-}

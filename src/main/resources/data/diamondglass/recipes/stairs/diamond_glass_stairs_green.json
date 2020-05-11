@@ -1,0 +1,17 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+        "  s",
+        " ss",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamondglass_green"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamondglassstair_green",
+        "count": 6
+     }
+ }

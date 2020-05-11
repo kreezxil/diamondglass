@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "diamondglass:blocks/diamondsandstonesmooth_bottom",
+        "top": "diamondglass:blocks/diamondsandstonesmooth_top",
+        "side": "diamondglass:blocks/diamondsandstonesmooth"
+    }
+}

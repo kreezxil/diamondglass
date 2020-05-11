@@ -1,0 +1,21 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+        "sss",
+        "sds",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "minecraft:sand",
+            "data": 0
+         },
+         "d": {
+            "item": "minecraft:diamond"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamondsand",
+        "count": 8
+     }
+ }

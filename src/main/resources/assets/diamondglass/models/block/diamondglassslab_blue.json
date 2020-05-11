@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "diamondglass:blocks/diamondglass_blue",
+        "top": "diamondglass:blocks/diamondglass_blue",
+        "side": "diamondglass:blocks/diamondglass_blue"
+    }
+}

@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "diamondglass:blocks/diamond_chiseled_sandstone_bottom",
-        "side": "diamondglass:blocks/diamond_sandstone_carved"
-    }
-}

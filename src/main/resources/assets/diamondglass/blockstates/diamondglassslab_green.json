@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "diamondglass:block/diamondglassslab_green" },
+        "type=top": { "model": "diamondglass:block/diamondglassslab_green_top" },
+        "type=double": { "model": "diamondglass:block/diamondglass_green" }
+    }
+}

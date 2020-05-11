@@ -1,0 +1,20 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+        "sss",
+        "sds",
+        "sss"
+     ],
+     "key": {
+        "s": {
+            "item": "diamondglass:diamondglass_cyan"
+         },
+         "d": {
+            "item": "minecraft:brown_dye"
+         }
+     },
+    "result": {
+        "item": "diamondglass:diamondglass_brown",
+        "count": 8
+     }
+ }

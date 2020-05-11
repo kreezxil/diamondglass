@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "diamondglass:block/diamondsandstonechiseledslab" },
+        "type=top": { "model": "diamondglass:block/diamondsandstonechiseledslab_top" },
+        "type=double": { "model": "diamondglass:block/diamondsandstonechiseled" }
+    }
+}

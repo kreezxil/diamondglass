@@ -1,0 +1,41 @@
+{
+     "type": "minecraft:crafting_shaped",
+     "pattern": [
+        "123",
+        "456",
+        "789"
+     ],
+     "key": {
+        "1": {
+            "item": "diamondglass:diamondglass_red"
+         },
+        "2": {
+            "item": "diamondglass:diamondglass_orange"
+         },
+        "3": {
+            "item": "diamondglass:diamondglass_yellow"
+         },
+        "4": {
+            "item": "diamondglass:diamondglass_lime"
+         },
+        "5": {
+            "item": "diamondglass:diamondglass_green"
+         },
+        "6": {
+            "item": "diamondglass:diamondglass_light_blue"
+         },
+        "7": {
+            "item": "diamondglass:diamondglass_blue"
+         },
+        "8": {
+            "item": "diamondglass:diamondglass_purple"
+         },
+        "9": {
+            "item": "diamondglass:diamondglass_magenta"
+         }
+     },
+    "result": {
+        "item": "diamondglass:rainbowglass",
+        "count": 9
+     }
+ }

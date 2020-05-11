@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "diamondglass:blocks/diamondglass_red",
+        "top": "diamondglass:blocks/diamondglass_red",
+        "side": "diamondglass:blocks/diamondglass_red"
+    }
+}
