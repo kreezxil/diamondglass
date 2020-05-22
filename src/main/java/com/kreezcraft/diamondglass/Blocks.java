@@ -27,7 +27,7 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(DiamondGlass.ModId)
 public class Blocks {
 	
-	public static final float glassHardness = .3F;
+	public static final float glassHardness = 6F;
 	
 	public static List<Block> glass = new ArrayList<Block>();
 	public static List<Block> pane = new ArrayList<Block>();
